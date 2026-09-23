@@ -1,0 +1,27 @@
+{
+  "post": {
+    "id": null,
+    "title": "Poker Hands: Complete Ranking Chart and What Beats What",
+    "slug": "poker-hands",
+    "excerpt": "Learn poker hands with clear rules, examples, quick-reference tables, and practical takeaways.",
+    "status": "draft",
+    "categories": ["Learn Poker"],
+    "tags": ["poker hands", "hand rankings"],
+    "featured_image": "images/poker-hands-chart.png",
+    "body_file": "_template-body.html",
+    "rank_math": {
+      "seo_title": "Poker Hands: Complete Ranking Chart and What Beats What",
+      "seo_description": "See the official poker hand ranking chart, worked examples, and the most common mistakes new players make when comparing hands.",
+      "focus_keyword": "poker hands"
+    }
+  },
+  "images": [
+    {
+      "file": "images/poker-hands-chart.png",
+      "alt": "Poker hand ranking chart from royal flush down to high card, ordered strongest to weakest",
+      "caption": "The complete poker hand ranking chart, strongest to weakest.",
+      "title": "Poker Hand Ranking Chart",
+      "description": "Used in: poker-hands article, section 1 (core ranking table). Rendered at 1500px wide."
+    }
+  ]
+}
