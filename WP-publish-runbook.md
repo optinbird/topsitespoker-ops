@@ -1,12 +1,12 @@
 # WordPress publishing runbook — TopSitesPoker.com
 
-**Status:** connection confirmed working 2026-09-23. `topsitespoker.com` is reachable
-from the "WP · topsitespoker.com" cloud environment; `WP_USER=optinbird` (role:
-administrator) and `WP_APP_PASSWORD` are valid — `upload_files`, `edit_posts` and
-`publish_posts` all `True`. **One env var is still missing**: `WP_SITE_URL` was not
-set, so add `WP_SITE_URL=https://topsitespoker.com` (no `www`, which is not in the
-Allowed domains list) to the environment's variables and start a fresh session
-afterward — env var changes only apply to new sessions.
+**Status:** connection confirmed working 2026-09-23, now also verified end-to-end with
+the actual script (`python3 wp_publish.py --check` → `users/me: 200`, user `optinbird`
+(id 1), `upload_files: True`, `edit_posts: True`, `Connection OK.`), not just a manual
+REST call. All three env vars are set in the "WP · topsitespoker.com" cloud environment:
+`WP_SITE_URL=https://topsitespoker.com` (no `www`), `WP_USER` and `WP_APP_PASSWORD` —
+nothing is missing. Earlier manual check: role administrator, `publish_posts` also
+`True`. Ready to publish once a real manifest is added under `posts/`.
 
 This repo (`optinbird/topsitespoker-ops`) is the working copy for claude.ai/code
 sessions on this site: it's a plain GitHub repo, separate from the TopSitesPoker.com
