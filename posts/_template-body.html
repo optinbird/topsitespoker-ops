@@ -1,0 +1,18 @@
+<!--
+Body-file convention:
+  - This is the post's content HTML, exactly as it should be saved to WordPress.
+  - Every image the post uses gets a placeholder src pointing at its manifest key:
+        INSERT-MEDIA-URL:<the "file" value from images[] in the manifest>
+    wp_publish.py replaces each one with the real Media Library URL after upload.
+  - The script REFUSES to publish (exits with an error) if any of these are still
+    present in the body: INSERT-MEDIA-URL, [Reviewer name, [Month DD, [Editor:
+    Resolve them before running without --dry-run.
+-->
+<p>A poker hand's rank is what decides who wins at showdown. This chart shows every
+hand from strongest to weakest, with a quick example of each.</p>
+
+<img src="INSERT-MEDIA-URL:images/poker-hands-chart.png"
+     width="1500" height="1000"
+     alt="Poker hand ranking chart from royal flush down to high card" />
+
+<p>[Editor: confirm this table matches the current WSOP rules reference before publishing.]</p>
